@@ -1,10 +1,10 @@
 {
   "name": "mathsteps",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Step by step math solutions",
   "main": "index.js",
   "dependencies": {
-    "mathjs": "3.11.2"
+    "mathjs": "11.7.0"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -34,6 +34,7 @@
     "system"
   ],
   "author": "Evy Kassirer",
+  "contributors": ["Mickael Guironnet"],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/socraticorg/mathsteps/issues"
