@@ -1,6 +1,6 @@
 {
   "name": "mathsteps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Step by step math solutions",
   "main": "index.js",
   "dependencies": {
