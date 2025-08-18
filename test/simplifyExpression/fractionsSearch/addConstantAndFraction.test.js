@@ -10,14 +10,14 @@ function testAddConstantAndFraction(exprString, outputList) {
 describe('addConstantAndFraction', function () {
   const tests = [
     ['7 + 1/2',
-      ['14/2 + 1/2',
+      ['14 / 2 + 1 / 2',
         '(14 + 1) / 2',
-        '15/2']
+        '15 / 2']
     ],
     ['5/6 + 3',
-      ['5/6 + 18/6',
+      ['5 / 6 + 18 / 6',
         '(5 + 18) / 6',
-        '23/6'],
+        '23 / 6'],
     ],
     ['1/2 + 5.8',
       ['0.5 + 5.8',

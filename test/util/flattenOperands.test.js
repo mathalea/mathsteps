@@ -5,6 +5,7 @@ const print = require('../../lib/util/print');
 
 const Node = require('../../lib/node');
 const TestUtil = require('../TestUtil');
+const setImplicityMultiplySign = require('../../lib/util/setImplicitMultiply');
 
 function testFlatten(exprStr, afterNode, debug=false) {
   const flattened = TestUtil.parseAndFlatten(exprStr);
@@ -67,17 +68,17 @@ describe('flattens + and *', function () {
 describe('flattens division', function () {
   const tests = [
     // groups x/4 and continues to flatten *
-    ['2 * x / 4 * 6 ',
+    ['2 x / 4 * 6 ',
       opNode('*', [opNode('/', [
-        math.parse('2x'), math.parse('4')]), constNode(6)])],
+        setImplicityMultiplySign(math.parse('2x')), math.parse('4')]), constNode(6)])],
     ['2*3/4/5*6',
       opNode('*', [constNode(2), math.parse('3/4/5'), constNode(6)])],
     // combines coefficient with x
-    ['x / (4 * x) / 8',
-      math.parse('x / (4x) / 8')],
+    ['x / (4 x) / 8',
+      setImplicityMultiplySign(math.parse('x / (4x) / 8'))],
     ['2 x * 4 x / 8',
-      opNode('*', [math.parse('2x'), opNode(
-        '/', [math.parse('4x'), constNode(8)])])],
+      opNode('*', [setImplicityMultiplySign(math.parse('2x')), opNode(
+        '/', [setImplicityMultiplySign(math.parse('4x')), constNode(8)])])],
   ];
   tests.forEach(t => testFlatten(t[0], t[1]));
 });

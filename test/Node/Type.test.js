@@ -15,7 +15,7 @@ describe('Node.Type works', function () {
   });
   it('10 constant', function () {
     assert.deepEqual(
-      Node.Type.isConstant(math.parse(10)),
+      Node.Type.isConstant(math.parse('10')),
       true);
   });
   it('-2 constant', function () {
