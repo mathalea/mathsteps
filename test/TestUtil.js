@@ -31,6 +31,16 @@ TestUtil.testBooleanFunction = function (simplifier, exprString, expectedBoolean
 };
 
 // Tests a simplification function
+TestUtil.testSimplificationLatex = function (simplifyingFunction, exprString,
+                                        expectedOutputString) {
+  it (exprString + ' -> ' + expectedOutputString,  () => {
+    assert.deepEqual(
+      print.latex(simplifyingFunction((math.parse(exprString))).newNode),
+      expectedOutputString);
+  });
+};
+
+// Tests a simplification function
 TestUtil.testSimplification = function (simplifyingFunction, exprString,
                                         expectedOutputString) {
   it (exprString + ' -> ' + expectedOutputString,  () => {

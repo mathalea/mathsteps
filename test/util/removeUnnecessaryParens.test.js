@@ -13,6 +13,7 @@ function testRemoveUnnecessaryParens(exprStr, outputStr) {
 describe('removeUnnecessaryParens', function () {
   const tests = [
     ['(2x)^2', '(2 x) ^ 2'],
+    ['x-(y/2)', 'x - 1 / 2 y'],
     ['(x+4) + 12', 'x + 4 + 12'],
     ['-(x+4x) + 12', '-(x + 4 x) + 12'],
     ['x + (12)', 'x + 12'],
