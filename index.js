@@ -6,6 +6,7 @@ const printMS = require('./lib/util/print');
 const Node = require('./lib/node');
 const Negative = require('./lib/Negative')
 const flatten = require('./lib/util/flattenOperands');
+const {SIMPLIFICATION_FUNCTIONS, TreeSearch} = require('./lib/simplifyExpression/basicsSearch/indexSimplifyOneRule')
 
 module.exports = {
   factor,
@@ -16,4 +17,6 @@ module.exports = {
   printMS,
   flatten,
   ChangeTypes,
+  SIMPLIFICATION_FUNCTIONS,
+  TreeSearch
 };

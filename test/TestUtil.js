@@ -13,9 +13,12 @@ TestUtil.parseAndFlatten = function (exprString) {
 };
 
 // Tests a function that takes an input string and check its output
-TestUtil.testFunctionOutput = function (fn, input, output) {
+TestUtil.testFunctionOutput = function (fn, input, output, options) {
   it(input + ' -> ' + output,  () => {
-    assert.deepEqual(fn(input),output);
+    if (options){
+      console.log('Options:', options);
+    }
+    assert.deepEqual(fn(input, ...(options ?? [])),output);
   });
 };
 
