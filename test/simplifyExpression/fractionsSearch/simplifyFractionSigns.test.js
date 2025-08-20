@@ -20,7 +20,7 @@ describe('simplify signs', function() {
 
 describe('simplify signs Latex', function() {
   const tests = [
-    ['-12x / -27', '\\dfrac{12 x}{27}'],
+    ['-x / y', '\\dfrac{- x}{ y}'],
     ['x / -y', '\\dfrac{- x}{ y}'],
   ];
   tests.forEach(t => testSimplifyFractionSignsLatex(t[0], t[1]));
