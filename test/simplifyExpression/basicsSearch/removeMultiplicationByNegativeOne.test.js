@@ -1,3 +1,5 @@
+const assert = require('assert');
+const NodeCreator = require('../../../lib/node/Creator');
 const removeMultiplicationByNegativeOne = require('../../../lib/simplifyExpression/basicsSearch/removeMultiplicationByNegativeOne');
 
 const testSimplify = require('./testSimplify');
@@ -9,4 +11,19 @@ describe('removeMultiplicationByNegativeOne', function() {
     ['2x*2*-1', '2 x * 2 * -1'], // does not remove multiplication by -1
   ];
   tests.forEach(t => testSimplify(t[0], t[1], removeMultiplicationByNegativeOne));
+});
+
+// to create nodes, for testing
+const opNode = NodeCreator.operator;
+const constNode = NodeCreator.constant;
+const symbolNode = NodeCreator.symbol;
+const unaryMinusNode = NodeCreator.unaryMinus;
+
+describe('removeMultiplicationByNegativeOne', function() {
+  it('should set addParenthesis for -1 * x = > -x', () => {
+      const node = opNode('*', [
+          unaryMinusNode(constNode(1)),symbolNode('x')]);
+      const result = removeMultiplicationByNegativeOne(node);
+      assert.strictEqual(result.newNode.toString(), '-x');
+  });
 });
