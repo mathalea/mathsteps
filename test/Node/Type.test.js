@@ -1,5 +1,5 @@
 const assert = require('assert');
-const math = require('mathjs');
+const math = require('../../lib/node/MathjsInstance');
 
 const Negative = require('../../lib/Negative');
 const Node = require('../../lib/node');

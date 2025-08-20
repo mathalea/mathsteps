@@ -1,5 +1,5 @@
 const assert = require('assert');
-const math = require('mathjs');
+const math = require('../../lib/node/MathjsInstance');
 
 const checks = require('../../lib/checks');
 

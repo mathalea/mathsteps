@@ -1,4 +1,4 @@
-const math = require('mathjs');
+const math = require('../../lib/node/MathjsInstance');
 
 const print = require('../../lib/util/print');
 const removeUnnecessaryParens = require('../../lib/util/removeUnnecessaryParens');

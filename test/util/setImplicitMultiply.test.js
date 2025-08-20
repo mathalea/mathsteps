@@ -1,5 +1,5 @@
 const assert = require('assert');
-const math = require('mathjs');
+const math = require('../../lib/node/MathjsInstance');
 const setImplicityMultiplySign = require('../../lib/util/setImplicitMultiply');
 
 describe('setImplicityMultiplySign', () => {

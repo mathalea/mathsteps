@@ -1,4 +1,4 @@
-const math = require('mathjs');
+const math = require('../../lib/node/MathjsInstance');
 
 const Node = require('../../lib/node');
 const print = require('../../lib/util/print');
