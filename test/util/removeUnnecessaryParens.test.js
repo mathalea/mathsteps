@@ -12,6 +12,8 @@ function testRemoveUnnecessaryParens(exprStr, outputStr) {
 
 describe('removeUnnecessaryParens', function () {
   const tests = [
+    ['x-(2/y)', 'x - 2 / y'],
+    ['x-(-2/y)', 'x - -2 / y'],
     ['(2x)^2', '(2 x) ^ 2'],
     ['(25)*x', '25 x'],
     ['x*(-2)', 'x * -2'],

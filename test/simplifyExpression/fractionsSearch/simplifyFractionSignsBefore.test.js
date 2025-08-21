@@ -21,9 +21,13 @@ describe('simplify signs', function() {
 
 describe('simplify signs Latex', function() {
   const tests = [
+    ['-4 / -5', '\\dfrac{4}{5}'],
+    ['4 / -5', '\\dfrac{-4}{5}'],
     ['-x / y', '-\\dfrac{ x}{ y}'],
     ['x / -y', '-\\dfrac{ x}{ y}'],
     ['-x / -y', '\\dfrac{ x}{ y}'],
+    ['y + -x / z', ' y - \\dfrac{ x}{ z}'],
+    ['y + -x / -z', ' y+\\dfrac{ x}{ z}'],
   ];
   tests.forEach(t => testSimplifyFractionSignsLatex(t[0], t[1]));
 });
