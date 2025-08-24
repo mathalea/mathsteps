@@ -30,7 +30,7 @@ steps.forEach(step => {
 })
 
 console.log('=====================')
-steps = mathsteps.solveEquation('7*x+3=5x-5');
+steps = mathsteps.solveEquation('4x-8=6x+10');
 
 steps.forEach(step => {
     console.log("before change: " + step.oldEquation.ascii());  // e.g. before change: 2x + 3x = 35
