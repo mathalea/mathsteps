@@ -30,7 +30,7 @@ steps.forEach(step => {
 })
 
 console.log('=====================')
-steps = mathsteps.solveEquation('7*x+3=5');
+steps = mathsteps.solveEquation('7*x+3=5x-5');
 
 steps.forEach(step => {
     console.log("before change: " + step.oldEquation.ascii());  // e.g. before change: 2x + 3x = 35
@@ -39,9 +39,11 @@ steps.forEach(step => {
     console.log("# of substeps: " + step.substeps.length);      // e.g. # of substeps: 2
 })
 
-const node = math.parse('x^2 + x/4 + 3*y');
-const filtered = node.filter(function (node) {
-   return node.isSymbolMathNode && node.name == 'x';
-});
+steps.forEach(step => {
+    console.log("before change: " + step.oldEquation.latex());  // e.g. before change: 2x + 3x = 35
+    console.log("change: " + step.changeType);                  // e.g. change: SIMPLIFY_LEFT_SIDE
+    console.log("after change: " + step.newEquation.latex());   // e.g. after change: 5x = 35
+    console.log("# of substeps: " + step.substeps.length);      // e.g. # of substeps: 2
+})
 
 const changes = mathsteps.ChangeTypes
