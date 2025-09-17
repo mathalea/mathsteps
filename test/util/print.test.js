@@ -63,6 +63,10 @@ describe('print with parenthesis', function () {
   const tests = [
     [opNode('*', [
       constNode(2), constNode(-3)]), '2 * (-3)', [false, true, true, true]],
+    [opNode('^', [
+      constNode(-3), constNode(2)]), '(-3) ^ 2', [false, true, true, true]],
+    [opNode('^', [
+       opNode('/', [constNode(9), constNode(6)]), constNode(2)]), '(9 / 6) ^ 2', [false, true, true, true]],
     [opNode('*', [
       opNode('+', [constNode(2), constNode(3)]),
       symbolNode('x')
