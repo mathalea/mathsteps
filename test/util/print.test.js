@@ -39,6 +39,13 @@ describe('print asciimath', function () {
 });
 
 describe('print latex', function() {
+   const tests = [
+    ['2 * (-3) + 4 + (-3) ^ 2 * (-5)', '2 \\left(-3\\right)+4+{\\left(-3\\right)}^{2} \\left(-5\\right)'],
+  ];
+  tests.forEach(t => testLatexPrintStr(t[0],t[1],t[2]));
+});
+
+describe('print latex', function() {
   const tests = [
     ['2*3+4', '2\\times 3+4'],
     ['2+3+4', '2+3+4'],

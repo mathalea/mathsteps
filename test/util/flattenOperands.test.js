@@ -65,6 +65,13 @@ describe('flattens + and *', function () {
   tests.forEach(t => testFlatten(t[0], t[1]));
 });
 
+describe('flattens test', function () {
+  const tests = [
+    ['(8 * (x + 9) ) /8', math.parse('(8 * (x + 9) ) /8')],
+   ];
+  tests.forEach(t => testFlatten(t[0], t[1]));
+});
+
 describe('flattens division', function () {
   const tests = [
     // groups x/4 and continues to flatten *
