@@ -62,6 +62,8 @@ describe('print latex', function() {
 describe('print with parenthesis', function () {
   const tests = [
     [opNode('*', [
+      constNode(2), constNode(-3)]), '2 * (-3)', [false, true, true, true]],
+    [opNode('*', [
       opNode('+', [constNode(2), constNode(3)]),
       symbolNode('x')
     ]), '(2 + 3) x'],
@@ -74,5 +76,5 @@ describe('print with parenthesis', function () {
       symbolNode('x')
     ]), '(9 + 2) / x'],
   ];
-  tests.forEach(t => testPrintNode(t[0], t[1]));
+  tests.forEach(t => testPrintNode(t[0], t[1], t[2]));
 });
