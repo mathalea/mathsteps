@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       mathjs:
-        specifier: ^14.6.0
-        version: 14.6.0
+        specifier: ^14.8.0
+        version: 14.8.2
     devDependencies:
       eslint:
         specifier: ^9.33.0
@@ -358,8 +358,8 @@ packages:
   lru-cache@2.7.3:
     resolution: {integrity: sha512-WpibWJ60c3AgAz8a2iYErDrcT2C7OmKnsWhIcHOjkUHFjkXncJhtLxNSqUmxRxRunpb5I8Vprd7aNSd2NtksJQ==}
 
-  mathjs@14.6.0:
-    resolution: {integrity: sha512-5vI2BLB5GKQmiSK9BH6hVkZ+GgqpdnOgEfmHl7mqVmdQObLynr63KueyYYLCQMzj66q69mV2XZZGQqqxeftQbA==}
+  mathjs@14.8.2:
+    resolution: {integrity: sha512-QbiGLoNwd/UazrpWTn3nnmIo51Es4X93cbKoKJP6/SBcNOX9sOOGu5ZTC7bI7SuK2Uy0oIhVKFyezG6LuAxrfQ==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -794,7 +794,7 @@ snapshots:
 
   lru-cache@2.7.3: {}
 
-  mathjs@14.6.0:
+  mathjs@14.8.2:
     dependencies:
       '@babel/runtime': 7.28.3
       complex.js: 2.4.2
