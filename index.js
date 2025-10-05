@@ -1,24 +1,23 @@
-const ChangeTypes = require('./lib/ChangeTypes');
-const factor = require('./lib/factor');
-const simplifyExpression = require('./lib/simplifyExpression');
-const solveEquation = require('./lib/solveEquation');
-const printMS = require('./lib/util/print');
-const Node = require('./lib/node');
-const Negative = require('./lib/Negative')
-const flatten = require('./lib/util/flattenOperands');
-const {SIMPLIFICATION_FUNCTIONS, TreeSearch} = require('./lib/simplifyExpression/basicsSearch/indexSimplifyOneRule');
-const Equation = require('./lib/equation/Equation');
+import { ChangeTypes } from './lib/ChangeTypes.js';
+import { Equation } from './lib/equation/Equation.js';
+import { factor } from './lib/factor.js';
+import { Negative } from './lib/Negative.js';
+import * as Node from './lib/node/index.js';
+import { simplifyExpression } from './lib/simplifyExpression.js';
+import { SIMPLIFICATION_FUNCTIONS, TreeSearch } from './lib/simplifyExpression/basicsSearch/indexSimplifyOneRule.js';
+import { solveEquation } from './lib/solveEquation.js';
+import { flatten } from './lib/util/flattenOperands.js';
+import * as printMS from './lib/util/print.js';
 
-module.exports = {
+export {
+  ChangeTypes,
+  Equation,
   factor,
+  flatten,
+  Negative,
+  Node,
+  printMS,
+  SIMPLIFICATION_FUNCTIONS,
   simplifyExpression,
   solveEquation,
-  Node,
-  Negative,
-  printMS,
-  flatten,
-  ChangeTypes,
-  SIMPLIFICATION_FUNCTIONS,
-  TreeSearch,
-  Equation
-};
+  TreeSearch};

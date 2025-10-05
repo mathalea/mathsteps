@@ -1,8 +1,6 @@
-import * as print from '../lib/util/print.js'
-
-import { Negative } from '../lib/Negative.js'
-
-import { TestUtil } from './TestUtil.js'
+import { Negative } from '../lib/Negative.js';
+import * as print from '../lib/util/print.js';
+import { TestUtil } from './TestUtil.js';
 
 function testNegate(exprString, outputStr) {
   const inputStr = Negative.negate(TestUtil.parseAndFlatten(exprString));

@@ -1,6 +1,5 @@
-import { NthRootTerm } from '../../lib/node/NthRootTerm.js'
-
-import { TestUtil } from '../TestUtil.js'
+import { NthRootTerm } from '../../lib/node/NthRootTerm.js';
+import { TestUtil } from '../TestUtil.js';
 
 function testIsNthRootTerm(exprStr, isTerm) {
   TestUtil.testBooleanFunction(NthRootTerm.isNthRootTerm, exprStr, isTerm);

@@ -1,9 +1,7 @@
 import assert from 'assert';
 
-import * as  print from '../../../lib/util/print.js';
-
 import { LikeTermCollector } from '../../../lib/simplifyExpression/collectAndCombineSearch/LikeTermCollector.js';
-
+import * as  print from '../../../lib/util/print.js';
 import { TestUtil } from '../../TestUtil.js';
 
 function testCollectLikeTerms(exprStr, outputStr, explanation='', debug=false) {

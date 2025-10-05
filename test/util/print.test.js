@@ -1,8 +1,6 @@
-import math from '../../lib/node/MathjsInstance.js';
-
 import * as Node from '../../lib/node/index.js';
+import math from '../../lib/node/MathjsInstance.js';
 import * as print from '../../lib/util/print.js';
-
 import { TestUtil } from '../TestUtil.js';
 
 // to create nodes, for testing
@@ -39,7 +37,7 @@ describe('print asciimath', function () {
 });
 
 describe('print latex', function() {
-   const tests = [
+  const tests = [
     ['2 * (-3) + 4 + (-3) ^ 2 * (-5)', '2 \\left(-3\\right)+4+{\\left(-3\\right)}^{2} \\left(-5\\right)'],
   ];
   tests.forEach(t => testLatexPrintStr(t[0],t[1],t[2]));
@@ -65,14 +63,14 @@ describe('print with parenthesis', function () {
       constNode(2), constNode(-3)]), '2 * (-3)', [false, true, true, true]],
     [opNode('*', [
       constNode(2), opNode('^', [
-      constNode(-3), constNode(2)])]), '2 * (-3) ^ 2', [false, true, true, true]],
+        constNode(-3), constNode(2)])]), '2 * (-3) ^ 2', [false, true, true, true]],
     [opNode('*', [
       constNode(2), opNode('^', [
-      symbolNode('x'), constNode(2)])]), '2 * x ^ 2', [false, true, true, true]],
+        symbolNode('x'), constNode(2)])]), '2 * x ^ 2', [false, true, true, true]],
     [opNode('^', [
       constNode(-3), constNode(2)]), '(-3) ^ 2', [false, true, true, true]],
     [opNode('^', [
-       opNode('/', [constNode(9), constNode(6)]), constNode(2)]), '(9 / 6) ^ 2', [false, true, true, true]],
+      opNode('/', [constNode(9), constNode(6)]), constNode(2)]), '(9 / 6) ^ 2', [false, true, true, true]],
     [opNode('*', [
       opNode('+', [constNode(2), constNode(3)]),
       symbolNode('x')

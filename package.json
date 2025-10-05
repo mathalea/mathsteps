@@ -11,14 +11,21 @@
     "node": ">=6.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.37.0",
     "eslint": "^9.33.0",
     "eslint-config-google": "^0.7.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^17.23.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "eslint-plugin-sort-requires": "^2.1.0",
+    "globals": "^16.4.0",
     "mocha": "2.4.5"
   },
   "scripts": {
     "lint": "eslint .",
     "test": "mocha --recursive",
+    "lint:fix": "eslint 'lib/**/*.js' 'test/**/*.js' --fix",
     "setup-hooks": "ln -s ../../scripts/git-hooks/pre-commit.sh .git/hooks/pre-commit"
   },
   "repository": {
@@ -35,7 +42,9 @@
     "system"
   ],
   "author": "Evy Kassirer",
-  "contributors": ["Mickael Guironnet"],
+  "contributors": [
+    "Mickael Guironnet"
+  ],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/socraticorg/mathsteps/issues"

@@ -1,6 +1,5 @@
-import { canRearrangeCoefficient } from '../lib/checks/canRearrangeCoefficient.js'
-
-import { TestUtil } from './TestUtil.js'
+import { canRearrangeCoefficient } from '../lib/checks/canRearrangeCoefficient.js';
+import { TestUtil } from './TestUtil.js';
 
 function testCanBeRearranged(expr, arrangeable) {
   TestUtil.testBooleanFunction(canRearrangeCoefficient, expr, arrangeable);

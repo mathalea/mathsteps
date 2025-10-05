@@ -1,7 +1,8 @@
-import assert from 'assert'
-import math from '../lib/node/MathjsInstance.js'
-import * as print from '../lib/util/print.js'
-import { Symbols }  from '../lib/Symbols.js'
+import assert from 'assert';
+
+import math from '../lib/node/MathjsInstance.js';
+import { Symbols }  from '../lib/Symbols.js';
+import * as print from '../lib/util/print.js';
 
 function runTest(functionToTest, exprString, expectedOutput, symbolName) {
   it(exprString + ' -> ' + expectedOutput, function () {

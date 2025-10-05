@@ -1,5 +1,4 @@
 import * as NthRoot from '../../../lib/simplifyExpression/functionsSearch/nthRoot.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testNthRoot(exprString, outputStr) {

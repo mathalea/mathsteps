@@ -1,5 +1,4 @@
 import { removeExponentBaseOne } from '../../../lib/simplifyExpression/basicsSearch/removeExponentBaseOne.js';
-
 import { testSimplify } from './testSimplify.js';
 
 describe('removeExponentBaseOne', function() {

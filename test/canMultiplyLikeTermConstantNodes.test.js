@@ -1,6 +1,5 @@
-import { canMultiplyLikeTermConstantNodes } from '../lib/checks/canMultiplyLikeTermConstantNodes.js'
-
-import { TestUtil } from './TestUtil.js'
+import { canMultiplyLikeTermConstantNodes } from '../lib/checks/canMultiplyLikeTermConstantNodes.js';
+import { TestUtil } from './TestUtil.js';
 
 function testCanBeMultipliedConstants(expr, multipliable) {
   TestUtil.testBooleanFunction(canMultiplyLikeTermConstantNodes, expr, multipliable);

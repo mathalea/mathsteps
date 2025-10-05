@@ -1,5 +1,4 @@
 import { removeAdditionOfZero } from '../../../lib/simplifyExpression/basicsSearch/removeAdditionOfZero.js';
-
 import { testSimplify } from './testSimplify.js';
 
 describe('removeAdditionOfZero', function() {

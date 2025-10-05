@@ -1,5 +1,4 @@
 import { breakUpNumeratorSearch } from '../../../lib/simplifyExpression/breakUpNumeratorSearch/index.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testBreakUpNumeratorSearch(exprStr, outputStr) {

@@ -1,5 +1,4 @@
 import { distributeSearch } from '../../../lib/simplifyExpression/distributeSearch/index.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 

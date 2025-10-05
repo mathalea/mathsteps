@@ -1,6 +1,5 @@
-import * as canAddLikeTerms from '../lib/checks/canAddLikeTerms.js'
-
-import { TestUtil } from './TestUtil.js'
+import * as canAddLikeTerms from '../lib/checks/canAddLikeTerms.js';
+import { TestUtil } from './TestUtil.js';
 
 function testCanBeAdded(expr, addable) {
   TestUtil.testBooleanFunction(

@@ -1,5 +1,4 @@
 import { divisionSearch } from '../../../lib/simplifyExpression/divisionSearch/index.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testSimplifyDivision(exprStr, outputStr) {

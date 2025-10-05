@@ -1,11 +1,10 @@
 import assert from 'assert';
-import math from '../../lib/node/MathjsInstance.js';
-
-import * as print from '../../lib/util/print.js';
 
 import * as  Node from '../../lib/node/index.js';
-import { TestUtil } from '../TestUtil.js';
+import math from '../../lib/node/MathjsInstance.js';
+import * as print from '../../lib/util/print.js';
 import { setImplicityMultiplySign } from '../../lib/util/setImplicitMultiply.js';
+import { TestUtil } from '../TestUtil.js';
 
 function testFlatten(exprStr, afterNode, debug=false) {
   const flattened = TestUtil.parseAndFlatten(exprStr);
@@ -68,7 +67,7 @@ describe('flattens + and *', function () {
 describe('flattens test', function () {
   const tests = [
     ['(8 * (x + 9) ) /8', math.parse('(8 * (x + 9) ) /8')],
-   ];
+  ];
   tests.forEach(t => testFlatten(t[0], t[1]));
 });
 

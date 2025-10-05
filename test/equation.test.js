@@ -1,13 +1,12 @@
-import assert from 'assert'
-import math from '../lib/node/MathjsInstance.js'
+import assert from 'assert';
 
-import { TestUtil } from './TestUtil.js'
-
-import { Equation } from '../lib/equation/Equation.js'
+import { Equation } from '../lib/equation/Equation.js';
+import math from '../lib/node/MathjsInstance.js';
+import { TestUtil } from './TestUtil.js';
 
 
 /**
- * 
+ *
  * @param {*} left : NodeMath
  * @param {*} right : NodeMath
  * @param {*} comp : string

@@ -1,6 +1,5 @@
-import { convertMixedNumberToImproperFraction } from '../../../lib/simplifyExpression/basicsSearch/convertMixedNumberToImproperFraction.js'
-
-import { TestUtil } from '../../TestUtil.js'
+import { convertMixedNumberToImproperFraction } from '../../../lib/simplifyExpression/basicsSearch/convertMixedNumberToImproperFraction.js';
+import { TestUtil } from '../../TestUtil.js';
 
 function testConvertMixedNumberToImproperFraction(exprString, outputList, outputStr) {
   TestUtil.testSubsteps(convertMixedNumberToImproperFraction, exprString, outputList, outputStr);

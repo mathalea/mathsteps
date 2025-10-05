@@ -1,5 +1,4 @@
 import { multiplyFractionsSearch } from '../../../lib/simplifyExpression//multiplyFractionsSearch/index.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testMultiplyFractionsSearch(exprString, outputStr) {

@@ -1,5 +1,5 @@
 import * as checks from '../../lib/checks/index.js';
-import { TestUtil } from '../TestUtil.js'
+import { TestUtil } from '../TestUtil.js';
 
 function testIsQuadratic(input, output) {
   TestUtil.testBooleanFunction(checks.isQuadratic, input, output);

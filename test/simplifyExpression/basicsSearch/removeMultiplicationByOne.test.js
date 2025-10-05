@@ -1,5 +1,4 @@
 import { removeMultiplicationByOne } from '../../../lib/simplifyExpression/basicsSearch/removeMultiplicationByOne.js';
-
 import { testSimplify } from './testSimplify.js';
 
 describe('removeMultiplicationByOne', function() {

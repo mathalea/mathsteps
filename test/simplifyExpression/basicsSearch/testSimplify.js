@@ -1,4 +1,5 @@
 import assert from 'assert';
+
 import * as print from '../../../lib/util/print.js';
 import { TestUtil } from '../../TestUtil.js';
 
@@ -15,4 +16,4 @@ function testSimplify(exprStr, outputStr, simplifyOperation) {
 
 export {
   testSimplify
-}
+};

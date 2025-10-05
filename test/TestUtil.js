@@ -1,8 +1,8 @@
-import assert from 'assert'
-import math from '../lib/node/MathjsInstance.js'
+import assert from 'assert';
 
-import { flattenOperands as flatten} from '../lib/util/flattenOperands.js'
-import * as print from '../lib/util/print.js'
+import math from '../lib/node/MathjsInstance.js';
+import { flattenOperands as flatten} from '../lib/util/flattenOperands.js';
+import * as print from '../lib/util/print.js';
 
 // TestUtil contains helper methods to share code across tests
 const TestUtil = {};
@@ -29,7 +29,7 @@ TestUtil.testBooleanFunction = function (simplifier, exprString, expectedBoolean
 
 // Tests a simplification function
 TestUtil.testSimplificationLatex = function (simplifyingFunction, exprString,
-                                        expectedOutputString) {
+  expectedOutputString) {
   it (exprString + ' -> ' + expectedOutputString,  () => {
     assert.deepEqual(
       print.latex(simplifyingFunction((math.parse(exprString))).newNode),
@@ -39,7 +39,7 @@ TestUtil.testSimplificationLatex = function (simplifyingFunction, exprString,
 
 // Tests a simplification function
 TestUtil.testSimplification = function (simplifyingFunction, exprString,
-                                        expectedOutputString) {
+  expectedOutputString) {
   it (exprString + ' -> ' + expectedOutputString,  () => {
     assert.deepEqual(
       print.ascii(simplifyingFunction(flatten(math.parse(exprString))).newNode),
@@ -49,7 +49,7 @@ TestUtil.testSimplification = function (simplifyingFunction, exprString,
 
 // Test the substeps in the expression
 TestUtil.testSubsteps = function (fn, exprString, outputList,
-                                    outputStr) {
+  outputStr) {
   it(exprString + ' -> ' + outputStr, () => {
     const status = fn(flatten(math.parse(exprString)));
     const substeps = status.substeps;
@@ -77,4 +77,4 @@ TestUtil.removeComments = function(node) {
 
 export {
   TestUtil
-}
+};

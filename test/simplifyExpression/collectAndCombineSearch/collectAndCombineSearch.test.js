@@ -1,5 +1,4 @@
 import { collectAndCombineLikeTermsSearch as collectAndCombineSearch }  from '../../../lib/simplifyExpression/collectAndCombineSearch/index.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testCollectAndCombineSubsteps(exprString, outputList, outputStr) {

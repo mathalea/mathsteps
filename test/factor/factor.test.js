@@ -1,4 +1,5 @@
-import assert from 'assert'
+import assert from 'assert';
+
 import { factorString as factor } from '../../lib/factor/index.js';
 import * as print  from '../../lib/util/print.js';
 

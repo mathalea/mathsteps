@@ -1,5 +1,4 @@
 import { simplifySignsBefore as simplifyFractionSignsBefore } from '../../../lib/simplifyExpression/fractionsSearch/simplifyFractionSignsBefore.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testSimplifyFractionSigns(exprStr, outputStr) {

@@ -1,7 +1,8 @@
 import assert from 'assert';
+
 import math from '../../lib/node/MathjsInstance.js';
-import * as print from '../../lib/util/print.js';
 import { simplify } from '../../lib/simplifyExpression/simplify.js';
+import * as print from '../../lib/util/print.js';
 
 
 function testSimplify(exprStr, outputStr, debug=false) {

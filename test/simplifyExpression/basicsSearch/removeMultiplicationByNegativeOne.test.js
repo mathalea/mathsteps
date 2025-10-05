@@ -1,5 +1,6 @@
 import assert  from 'assert';
-import { NodeCreator } from '../../../lib/node/Creator.js'
+
+import { NodeCreator } from '../../../lib/node/Creator.js';
 import { removeMultiplicationByNegativeOne } from '../../../lib/simplifyExpression/basicsSearch/removeMultiplicationByNegativeOne.js';
 import { testSimplify } from './testSimplify.js';
 
@@ -20,9 +21,9 @@ const unaryMinusNode = NodeCreator.unaryMinus;
 
 describe('removeMultiplicationByNegativeOne', function() {
   it('should set addParenthesis for -1 * x = > -x', () => {
-      const node = opNode('*', [
-          unaryMinusNode(constNode(1)),symbolNode('x')]);
-      const result = removeMultiplicationByNegativeOne(node);
-      assert.strictEqual(result.newNode.toString(), '-x');
+    const node = opNode('*', [
+      unaryMinusNode(constNode(1)),symbolNode('x')]);
+    const result = removeMultiplicationByNegativeOne(node);
+    assert.strictEqual(result.newNode.toString(), '-x');
   });
 });

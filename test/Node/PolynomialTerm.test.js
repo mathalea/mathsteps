@@ -1,6 +1,5 @@
-import { PolynomialTerm } from '../../lib/node/PolynomialTerm.js'
-
-import { TestUtil } from '../TestUtil.js'
+import { PolynomialTerm } from '../../lib/node/PolynomialTerm.js';
+import { TestUtil } from '../TestUtil.js';
 
 function testIsPolynomialTerm(exprStr, isTerm) {
   TestUtil.testBooleanFunction(PolynomialTerm.isPolynomialTerm, exprStr, isTerm);

@@ -1,5 +1,4 @@
 import { reduceMultiplicationByZero } from '../../../lib/simplifyExpression/basicsSearch/reduceMultiplicationByZero.js';
-
 import { testSimplify } from './testSimplify.js';
 
 describe('reduce multiplication by 0', function () {

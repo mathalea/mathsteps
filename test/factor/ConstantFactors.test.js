@@ -1,5 +1,5 @@
 import { ConstantFactors } from '../../lib/factor/ConstantFactors.js';
-import { TestUtil } from '../TestUtil.js'
+import { TestUtil } from '../TestUtil.js';
 
 function testPrimeFactors(input, output) {
   TestUtil.testFunctionOutput(ConstantFactors.getPrimeFactors, input, output);

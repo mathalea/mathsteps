@@ -1,5 +1,5 @@
 import { factorQuadratic } from '../../lib/factor/factorQuadratic.js';
-import { TestUtil } from '../TestUtil.js'
+import { TestUtil } from '../TestUtil.js';
 
 function testFactorQuadratic(input, output) {
   TestUtil.testSimplification(factorQuadratic, input, output);

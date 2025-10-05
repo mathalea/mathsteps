@@ -1,5 +1,4 @@
 import { simplifyPolynomialFraction } from '../../../lib/simplifyExpression/fractionsSearch/simplifyPolynomialFraction.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testSimplifyPolynomialFraction(exprStr, outputStr) {

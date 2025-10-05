@@ -1,5 +1,5 @@
 import * as checks from '../../lib/checks/index.js';
-import { TestUtil } from '../TestUtil.js'
+import { TestUtil } from '../TestUtil.js';
 
 function testResolvesToConstant(exprString, resolves) {
   TestUtil.testBooleanFunction(checks.resolvesToConstant, exprString, resolves);

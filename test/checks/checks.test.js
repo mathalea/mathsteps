@@ -1,10 +1,10 @@
+import assert  from 'assert';
+
+import { ChangeTypes } from '../../lib/ChangeTypes.js';
 import * as checks from '../../lib/checks/index.js';
 import { Equation } from '../../lib/equation/Equation.js';
-import assert  from 'assert';
 import {solveEquationString as solveEquation} from '../../lib/solveEquation/index.js';
-
-import { TestUtil } from '../TestUtil.js'
-import { ChangeTypes } from '../../lib/ChangeTypes.js';
+import { TestUtil } from '../TestUtil.js';
 
 function testCanCombine(exprStr, canCombine) {
   TestUtil.testBooleanFunction(checks.canSimplifyPolynomialTerms, exprStr, canCombine);
@@ -20,12 +20,12 @@ function testSolveCrossMultiplication(exprStr, outputStr, debug=false, changeTyp
   const steps = solveEquation(exprStr, debug);
   const lastStep = steps[steps.length -1].newEquation.ascii();
   it(exprStr + ' -> ' + outputStr, (done) => {
-      assert.equal(lastStep, outputStr);
-      done();
+    assert.equal(lastStep, outputStr);
+    done();
   });
 
   if (changeType){
-    let changeFound = ''
+    let changeFound = '';
     steps.forEach(step => {
       if (changeType === step.changeType) {
         changeFound = step.changeType;

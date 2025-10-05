@@ -1,5 +1,4 @@
 import { divideByGCD } from '../../../lib/simplifyExpression/fractionsSearch/divideByGCD.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testDivideByGCD(exprStr, outputStr) {

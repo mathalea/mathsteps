@@ -1,5 +1,4 @@
 import { absoluteValue } from '../../../lib/simplifyExpression/functionsSearch/absoluteValue.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testAbsoluteValue(exprString, outputStr) {

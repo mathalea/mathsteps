@@ -1,5 +1,4 @@
 import { addConstantFractions } from '../../../lib/simplifyExpression/fractionsSearch/addConstantFractions.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testAddConstantFractions(exprString, outputList) {

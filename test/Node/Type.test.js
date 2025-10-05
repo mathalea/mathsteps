@@ -1,7 +1,8 @@
 import assert from 'assert';
-import math from '../../lib/node/MathjsInstance.js';
+
 import { Negative } from '../../lib/Negative.js';
 import  * as Node from '../../lib/node/index.js';
+import math from '../../lib/node/MathjsInstance.js';
 import { TestUtil } from '../TestUtil.js';
 
 

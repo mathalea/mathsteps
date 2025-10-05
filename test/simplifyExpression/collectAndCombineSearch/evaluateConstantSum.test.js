@@ -1,5 +1,4 @@
 import { evaluateConstantSum } from '../../../lib/simplifyExpression/collectAndCombineSearch/evaluateConstantSum.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testEvaluateConstantSum(exprString, outputList) {

@@ -1,8 +1,6 @@
 import math from '../../lib/node/MathjsInstance.js';
-
 import * as print from '../../lib/util/print.js';
 import { removeUnnecessaryParens } from '../../lib/util/removeUnnecessaryParens.js';
-
 import { TestUtil } from '../TestUtil.js';
 
 function testRemoveUnnecessaryParens(exprStr, outputStr) {

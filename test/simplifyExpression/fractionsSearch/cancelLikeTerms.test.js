@@ -1,5 +1,4 @@
 import { cancelLikeTerms } from '../../../lib/simplifyExpression/fractionsSearch/cancelLikeTerms.js';
-
 import { TestUtil } from '../../TestUtil.js';
 
 function testCancelLikeTerms(exprStr, expectedStr) {

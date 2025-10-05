@@ -1,5 +1,4 @@
 import {reduceZeroDividedByAnything } from '../../../lib/simplifyExpression/basicsSearch/reduceZeroDividedByAnything.js';
-
 import { testSimplify } from './testSimplify.js';
 
 describe('simplify basics', function () {
