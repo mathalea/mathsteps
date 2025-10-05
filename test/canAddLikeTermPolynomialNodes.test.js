@@ -1,6 +1,6 @@
-const canAddLikeTerms = require('../lib/checks/canAddLikeTerms');
+import * as canAddLikeTerms from '../lib/checks/canAddLikeTerms.js'
 
-const TestUtil = require('./TestUtil');
+import { TestUtil } from './TestUtil.js'
 
 function testCanBeAdded(expr, addable) {
   TestUtil.testBooleanFunction(

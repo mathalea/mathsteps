@@ -1,5 +1,5 @@
-const checks = require('../../lib/checks');
-const TestUtil = require('../TestUtil');
+import * as checks from '../../lib/checks/index.js';
+import { TestUtil } from '../TestUtil.js'
 
 function testIsQuadratic(input, output) {
   TestUtil.testBooleanFunction(checks.isQuadratic, input, output);

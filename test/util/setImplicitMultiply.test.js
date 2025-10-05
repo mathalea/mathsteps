@@ -1,6 +1,6 @@
-const assert = require('assert');
-const math = require('../../lib/node/MathjsInstance');
-const setImplicityMultiplySign = require('../../lib/util/setImplicitMultiply');
+import assert from 'assert';
+import math from '../../lib/node/MathjsInstance.js';
+import { setImplicityMultiplySign } from '../../lib/util/setImplicitMultiply.js';
 
 describe('setImplicityMultiplySign', () => {
     it('should set implicit multiply for 2*x', () => {

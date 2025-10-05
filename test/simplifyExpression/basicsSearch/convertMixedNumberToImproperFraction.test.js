@@ -1,7 +1,6 @@
-const convertMixedNumberToImproperFraction = require(
-  '../../../lib/simplifyExpression/basicsSearch/convertMixedNumberToImproperFraction');
+import { convertMixedNumberToImproperFraction } from '../../../lib/simplifyExpression/basicsSearch/convertMixedNumberToImproperFraction.js'
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js'
 
 function testConvertMixedNumberToImproperFraction(exprString, outputList, outputStr) {
   TestUtil.testSubsteps(convertMixedNumberToImproperFraction, exprString, outputList, outputStr);

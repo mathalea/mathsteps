@@ -1,6 +1,6 @@
-const PolynomialTerm = require('../../lib/node/PolynomialTerm');
+import { PolynomialTerm } from '../../lib/node/PolynomialTerm.js'
 
-const TestUtil = require('../TestUtil');
+import { TestUtil } from '../TestUtil.js'
 
 function testIsPolynomialTerm(exprStr, isTerm) {
   TestUtil.testBooleanFunction(PolynomialTerm.isPolynomialTerm, exprStr, isTerm);

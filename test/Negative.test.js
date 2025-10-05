@@ -1,8 +1,8 @@
-const print = require('../lib/util/print');
+import * as print from '../lib/util/print.js'
 
-const Negative = require('../lib/Negative');
+import { Negative } from '../lib/Negative.js'
 
-const TestUtil = require('./TestUtil');
+import { TestUtil } from './TestUtil.js'
 
 function testNegate(exprString, outputStr) {
   const inputStr = Negative.negate(TestUtil.parseAndFlatten(exprString));

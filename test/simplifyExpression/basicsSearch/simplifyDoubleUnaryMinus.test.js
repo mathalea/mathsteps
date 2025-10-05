@@ -1,6 +1,6 @@
-const simplifyDoubleUnaryMinus = require('../../../lib/simplifyExpression/basicsSearch/simplifyDoubleUnaryMinus');
+import { simplifyDoubleUnaryMinus } from '../../../lib/simplifyExpression/basicsSearch/simplifyDoubleUnaryMinus.js';
 
-const testSimplify = require('./testSimplify');
+import { testSimplify } from './testSimplify.js';
 
 describe('simplifyDoubleUnaryMinus', function() {
   var tests = [

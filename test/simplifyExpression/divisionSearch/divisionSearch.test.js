@@ -1,6 +1,6 @@
-const divisionSearch = require('../../../lib/simplifyExpression/divisionSearch');
+import { divisionSearch } from '../../../lib/simplifyExpression/divisionSearch/index.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testSimplifyDivision(exprStr, outputStr) {
   TestUtil.testSimplification(divisionSearch, exprStr, outputStr);

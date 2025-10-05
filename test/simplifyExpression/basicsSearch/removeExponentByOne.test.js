@@ -1,6 +1,6 @@
-const removeExponentByOne = require('../../../lib/simplifyExpression/basicsSearch/removeExponentByOne');
+import { removeExponentByOne } from '../../../lib/simplifyExpression/basicsSearch/removeExponentByOne.js';
 
-const testSimplify = require('./testSimplify');
+import { testSimplify } from './testSimplify.js';
 
 describe('removeExponentByOne', function() {
   testSimplify('x^1', 'x', removeExponentByOne);

@@ -1,8 +1,8 @@
-const assert = require('assert');
+import assert from 'assert';
 
-const Term = require('../../lib/node/Term');
-const NodeCreator = require('../../lib/node/Creator');
-const NodeType = require('../../lib/node/Type');
+import { Term } from '../../lib/node/Term.js';
+import { NodeCreator } from '../../lib/node/Creator.js';
+import { NodeType } from '../../lib/node/Type.js';
 
 // Helper: baseNodeFunc for symbol nodes
 const isSymbol = node => node.type === 'SymbolNode';

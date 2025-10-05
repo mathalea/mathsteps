@@ -1,6 +1,6 @@
-const removeAdditionOfZero = require('../../../lib/simplifyExpression/basicsSearch/removeAdditionOfZero');
+import { removeAdditionOfZero } from '../../../lib/simplifyExpression/basicsSearch/removeAdditionOfZero.js';
 
-const testSimplify = require('./testSimplify');
+import { testSimplify } from './testSimplify.js';
 
 describe('removeAdditionOfZero', function() {
   var tests = [

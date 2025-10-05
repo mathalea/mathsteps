@@ -1,6 +1,6 @@
-const rearrangeCoefficient = require('../../../lib/simplifyExpression/basicsSearch/rearrangeCoefficient');
+import { rearrangeCoefficient } from '../../../lib/simplifyExpression/basicsSearch/rearrangeCoefficient.js';
 
-const testSimplify = require('./testSimplify');
+import { testSimplify } from './testSimplify.js';
 
 describe('rearrangeCoefficient', function() {
   const tests = [

@@ -1,6 +1,6 @@
-const canRearrangeCoefficient = require('../lib/checks/canRearrangeCoefficient');
+import { canRearrangeCoefficient } from '../lib/checks/canRearrangeCoefficient.js'
 
-const TestUtil = require('./TestUtil');
+import { TestUtil } from './TestUtil.js'
 
 function testCanBeRearranged(expr, arrangeable) {
   TestUtil.testBooleanFunction(canRearrangeCoefficient, expr, arrangeable);

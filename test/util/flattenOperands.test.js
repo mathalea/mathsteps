@@ -1,11 +1,11 @@
-const assert = require('assert');
-const math = require('../../lib/node/MathjsInstance');
+import assert from 'assert';
+import math from '../../lib/node/MathjsInstance.js';
 
-const print = require('../../lib/util/print');
+import * as print from '../../lib/util/print.js';
 
-const Node = require('../../lib/node');
-const TestUtil = require('../TestUtil');
-const setImplicityMultiplySign = require('../../lib/util/setImplicitMultiply');
+import * as  Node from '../../lib/node/index.js';
+import { TestUtil } from '../TestUtil.js';
+import { setImplicityMultiplySign } from '../../lib/util/setImplicitMultiply.js';
 
 function testFlatten(exprStr, afterNode, debug=false) {
   const flattened = TestUtil.parseAndFlatten(exprStr);

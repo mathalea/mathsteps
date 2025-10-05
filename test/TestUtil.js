@@ -1,8 +1,8 @@
-const assert = require('assert');
-const math = require('../lib/node/MathjsInstance');
+import assert from 'assert'
+import math from '../lib/node/MathjsInstance.js'
 
-const flatten = require('../lib/util/flattenOperands');
-const print = require('../lib/util/print');
+import { flattenOperands as flatten} from '../lib/util/flattenOperands.js'
+import * as print from '../lib/util/print.js'
 
 // TestUtil contains helper methods to share code across tests
 const TestUtil = {};
@@ -75,4 +75,6 @@ TestUtil.removeComments = function(node) {
     node => delete node.comment);
 };
 
-module.exports = TestUtil;
+export {
+  TestUtil
+}

@@ -1,6 +1,6 @@
-const cancelLikeTerms = require('../../../lib/simplifyExpression/fractionsSearch/cancelLikeTerms');
+import { cancelLikeTerms } from '../../../lib/simplifyExpression/fractionsSearch/cancelLikeTerms.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testCancelLikeTerms(exprStr, expectedStr) {
   TestUtil.testSimplification(cancelLikeTerms, exprStr, expectedStr);

@@ -1,7 +1,7 @@
-const assert = require('assert');
-const math = require('../../lib/node/MathjsInstance');
-const addParenthesis = require('../../lib/util/addParenthesis');
-const NodeCreator = require('../../lib/node/Creator');
+import assert from 'assert';
+import math from '../../lib/node/MathjsInstance.js';
+import { addParenthesis } from '../../lib/util/addParenthesis.js';
+import { NodeCreator } from '../../lib/node/Creator.js';
 
 
 // to create nodes, for testing

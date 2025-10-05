@@ -1,6 +1,5 @@
-const canMultiplyLikeTermPolynomialNodes = require('../lib/checks/canMultiplyLikeTermPolynomialNodes');
-
-const TestUtil = require('./TestUtil');
+import { canMultiplyLikeTermPolynomialNodes } from '../lib/checks/canMultiplyLikeTermPolynomialNodes.js'
+import { TestUtil } from './TestUtil.js'
 
 function testCanBeMultiplied(expr, multipliable) {
   TestUtil.testBooleanFunction(canMultiplyLikeTermPolynomialNodes, expr, multipliable);

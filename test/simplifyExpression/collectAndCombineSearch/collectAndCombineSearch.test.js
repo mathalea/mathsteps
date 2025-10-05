@@ -1,6 +1,6 @@
-const collectAndCombineSearch = require('../../../lib/simplifyExpression/collectAndCombineSearch');
+import { collectAndCombineLikeTermsSearch as collectAndCombineSearch }  from '../../../lib/simplifyExpression/collectAndCombineSearch/index.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testCollectAndCombineSubsteps(exprString, outputList, outputStr) {
   TestUtil.testSubsteps(collectAndCombineSearch, exprString, outputList, outputStr);

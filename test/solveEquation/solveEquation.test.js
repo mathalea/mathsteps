@@ -1,7 +1,7 @@
-const assert = require('assert');
+import assert from 'assert';
 
-const ChangeTypes = require('../../lib/ChangeTypes');
-const solveEquation = require('../../lib/solveEquation');
+import { ChangeTypes } from '../../lib/ChangeTypes.js';
+import { solveEquationString as solveEquation } from '../../lib/solveEquation/index.js';
 
 const NO_STEPS = 'no-steps';
 

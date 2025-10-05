@@ -1,6 +1,6 @@
-const assert = require('assert');
-const factor = require('../../lib/factor');
-const print = require('../../lib/util/print');
+import assert from 'assert'
+import { factorString as factor } from '../../lib/factor/index.js';
+import * as print  from '../../lib/util/print.js';
 
 const NO_STEPS = 'no-steps';
 

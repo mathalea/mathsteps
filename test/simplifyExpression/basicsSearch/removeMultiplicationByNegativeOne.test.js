@@ -1,8 +1,7 @@
-const assert = require('assert');
-const NodeCreator = require('../../../lib/node/Creator');
-const removeMultiplicationByNegativeOne = require('../../../lib/simplifyExpression/basicsSearch/removeMultiplicationByNegativeOne');
-
-const testSimplify = require('./testSimplify');
+import assert  from 'assert';
+import { NodeCreator } from '../../../lib/node/Creator.js'
+import { removeMultiplicationByNegativeOne } from '../../../lib/simplifyExpression/basicsSearch/removeMultiplicationByNegativeOne.js';
+import { testSimplify } from './testSimplify.js';
 
 describe('removeMultiplicationByNegativeOne', function() {
   const tests = [

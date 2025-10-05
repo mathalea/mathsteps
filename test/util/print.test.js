@@ -1,9 +1,9 @@
-const math = require('../../lib/node/MathjsInstance');
+import math from '../../lib/node/MathjsInstance.js';
 
-const Node = require('../../lib/node');
-const print = require('../../lib/util/print');
+import * as Node from '../../lib/node/index.js';
+import * as print from '../../lib/util/print.js';
 
-const TestUtil = require('../TestUtil');
+import { TestUtil } from '../TestUtil.js';
 
 // to create nodes, for testing
 const opNode = Node.Creator.operator;

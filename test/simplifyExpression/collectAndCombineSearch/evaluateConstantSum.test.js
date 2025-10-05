@@ -1,6 +1,6 @@
-const evaluateConstantSum = require('../../../lib/simplifyExpression/collectAndCombineSearch/evaluateConstantSum');
+import { evaluateConstantSum } from '../../../lib/simplifyExpression/collectAndCombineSearch/evaluateConstantSum.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testEvaluateConstantSum(exprString, outputList) {
   const lastString = outputList[outputList.length - 1];

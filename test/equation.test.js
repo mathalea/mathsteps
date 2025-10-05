@@ -1,9 +1,9 @@
-const assert = require('assert');
-const math = require('../lib/node/MathjsInstance');
+import assert from 'assert'
+import math from '../lib/node/MathjsInstance.js'
 
-const TestUtil = require('./TestUtil');
+import { TestUtil } from './TestUtil.js'
 
-const Equation = require('../lib/equation/Equation');
+import { Equation } from '../lib/equation/Equation.js'
 
 
 /**

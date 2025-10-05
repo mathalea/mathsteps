@@ -1,6 +1,6 @@
-const addConstantAndFraction = require('../../../lib/simplifyExpression/fractionsSearch/addConstantAndFraction');
+import { addConstantAndFraction } from '../../../lib/simplifyExpression/fractionsSearch/addConstantAndFraction.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testAddConstantAndFraction(exprString, outputList) {
   const lastString = outputList[outputList.length - 1];

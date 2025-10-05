@@ -1,6 +1,6 @@
-const removeMultiplicationByOne = require('../../../lib/simplifyExpression/basicsSearch/removeMultiplicationByOne');
+import { removeMultiplicationByOne } from '../../../lib/simplifyExpression/basicsSearch/removeMultiplicationByOne.js';
 
-const testSimplify = require('./testSimplify');
+import { testSimplify } from './testSimplify.js';
 
 describe('removeMultiplicationByOne', function() {
   const tests = [

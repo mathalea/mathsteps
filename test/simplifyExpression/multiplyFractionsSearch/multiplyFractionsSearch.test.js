@@ -1,6 +1,6 @@
-const multiplyFractionsSearch = require('../../../lib/simplifyExpression//multiplyFractionsSearch');
+import { multiplyFractionsSearch } from '../../../lib/simplifyExpression//multiplyFractionsSearch/index.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testMultiplyFractionsSearch(exprString, outputStr) {
   TestUtil.testSimplification(multiplyFractionsSearch, exprString, outputStr);

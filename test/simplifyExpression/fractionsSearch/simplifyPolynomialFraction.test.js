@@ -1,6 +1,6 @@
-const simplifyPolynomialFraction = require('../../../lib/simplifyExpression/fractionsSearch/simplifyPolynomialFraction');
+import { simplifyPolynomialFraction } from '../../../lib/simplifyExpression/fractionsSearch/simplifyPolynomialFraction.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testSimplifyPolynomialFraction(exprStr, outputStr) {
   TestUtil.testSimplification(simplifyPolynomialFraction, exprStr, outputStr);

@@ -1,6 +1,6 @@
-const distributeSearch = require('../../../lib/simplifyExpression/distributeSearch');
+import { distributeSearch } from '../../../lib/simplifyExpression/distributeSearch/index.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 
 function testDistribute(exprStr, outputStr) {

@@ -1,9 +1,8 @@
-const assert = require('assert');
+import assert from 'assert';
+import * as print from '../../lib/util/print.js';
+import { ChangeTypes } from '../../lib/ChangeTypes.js';
+import { simplifyExpressionString as simplifyExpression } from '../../lib/simplifyExpression/index.js';
 
-const print = require('../../lib/util/print');
-
-const ChangeTypes = require('../../lib/ChangeTypes');
-const simplifyExpression = require('../../lib/simplifyExpression');
 
 function testOneStep(exprStr, outputStr, debug=false) {
   const steps = simplifyExpression(exprStr);

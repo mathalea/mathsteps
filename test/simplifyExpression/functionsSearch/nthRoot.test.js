@@ -1,6 +1,6 @@
-const NthRoot = require('../../../lib/simplifyExpression/functionsSearch/nthRoot');
+import * as NthRoot from '../../../lib/simplifyExpression/functionsSearch/nthRoot.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testNthRoot(exprString, outputStr) {
   TestUtil.testSimplification(NthRoot.nthRoot, exprString, outputStr);

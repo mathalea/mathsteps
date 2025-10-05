@@ -1,10 +1,10 @@
-const assert = require('assert');
+import assert from 'assert';
 
-const print = require('../../../lib/util/print');
+import * as  print from '../../../lib/util/print.js';
 
-const LikeTermCollector = require('../../../lib/simplifyExpression/collectAndCombineSearch/LikeTermCollector');
+import { LikeTermCollector } from '../../../lib/simplifyExpression/collectAndCombineSearch/LikeTermCollector.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testCollectLikeTerms(exprStr, outputStr, explanation='', debug=false) {
   let description = `${exprStr} -> ${outputStr}`;

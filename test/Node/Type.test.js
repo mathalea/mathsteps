@@ -1,9 +1,9 @@
-const assert = require('assert');
-const math = require('../../lib/node/MathjsInstance');
+import assert from 'assert';
+import math from '../../lib/node/MathjsInstance.js';
+import { Negative } from '../../lib/Negative.js';
+import  * as Node from '../../lib/node/index.js';
+import { TestUtil } from '../TestUtil.js';
 
-const Negative = require('../../lib/Negative');
-const Node = require('../../lib/node');
-const TestUtil = require('../TestUtil');
 
 const constNode = Node.Creator.constant;
 

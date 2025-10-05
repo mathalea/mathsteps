@@ -1,6 +1,5 @@
-const ConstantFactors = require('../../lib/factor/ConstantFactors');
-
-const TestUtil = require('../TestUtil');
+import { ConstantFactors } from '../../lib/factor/ConstantFactors.js';
+import { TestUtil } from '../TestUtil.js'
 
 function testPrimeFactors(input, output) {
   TestUtil.testFunctionOutput(ConstantFactors.getPrimeFactors, input, output);

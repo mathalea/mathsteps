@@ -1,6 +1,6 @@
-const breakUpNumeratorSearch = require('../../../lib/simplifyExpression/breakUpNumeratorSearch');
+import { breakUpNumeratorSearch } from '../../../lib/simplifyExpression/breakUpNumeratorSearch/index.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testBreakUpNumeratorSearch(exprStr, outputStr) {
   TestUtil.testSimplification(breakUpNumeratorSearch, exprStr, outputStr);

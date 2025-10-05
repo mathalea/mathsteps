@@ -1,6 +1,6 @@
-const divideByGCD = require('../../../lib/simplifyExpression/fractionsSearch/divideByGCD');
+import { divideByGCD } from '../../../lib/simplifyExpression/fractionsSearch/divideByGCD.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testDivideByGCD(exprStr, outputStr) {
   TestUtil.testSimplification(divideByGCD, exprStr, outputStr);

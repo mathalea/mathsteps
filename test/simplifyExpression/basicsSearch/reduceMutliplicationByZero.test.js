@@ -1,6 +1,6 @@
-const reduceMultiplicationByZero = require('../../../lib/simplifyExpression/basicsSearch/reduceMultiplicationByZero');
+import { reduceMultiplicationByZero } from '../../../lib/simplifyExpression/basicsSearch/reduceMultiplicationByZero.js';
 
-const testSimplify = require('./testSimplify');
+import { testSimplify } from './testSimplify.js';
 
 describe('reduce multiplication by 0', function () {
   const tests = [

@@ -1,6 +1,6 @@
-const assert = require('assert');
+import assert from 'assert';
 
-const Util = require('../../lib/util/Util');
+import { Util } from '../../lib/util/Util.js';
 
 describe('appendToArrayInObject', function () {
   it('creates empty array', function () {

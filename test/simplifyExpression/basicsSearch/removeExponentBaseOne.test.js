@@ -1,6 +1,6 @@
-const removeExponentBaseOne = require('../../../lib/simplifyExpression/basicsSearch/removeExponentBaseOne');
+import { removeExponentBaseOne } from '../../../lib/simplifyExpression/basicsSearch/removeExponentBaseOne.js';
 
-const testSimplify = require('./testSimplify');
+import { testSimplify } from './testSimplify.js';
 
 describe('removeExponentBaseOne', function() {
   const tests = [

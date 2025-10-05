@@ -1,9 +1,8 @@
-const assert = require('assert');
-const math = require('../../lib/node/MathjsInstance');
+import assert from 'assert';
+import math from '../../lib/node/MathjsInstance.js';
+import * as print from '../../lib/util/print.js';
+import { simplify } from '../../lib/simplifyExpression/simplify.js';
 
-const print = require('../../lib/util/print');
-
-const simplify = require('../../lib/simplifyExpression/simplify');
 
 function testSimplify(exprStr, outputStr, debug=false) {
   it(exprStr + ' -> ' + outputStr, function () {

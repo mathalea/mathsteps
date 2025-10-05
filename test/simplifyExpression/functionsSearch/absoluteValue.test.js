@@ -1,6 +1,6 @@
-const absoluteValue = require('../../../lib/simplifyExpression/functionsSearch/absoluteValue');
+import { absoluteValue } from '../../../lib/simplifyExpression/functionsSearch/absoluteValue.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testAbsoluteValue(exprString, outputStr) {
   TestUtil.testSimplification(absoluteValue, exprString, outputStr);

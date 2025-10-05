@@ -1,9 +1,9 @@
-const math = require('../../lib/node/MathjsInstance');
+import math from '../../lib/node/MathjsInstance.js';
 
-const print = require('../../lib/util/print');
-const removeUnnecessaryParens = require('../../lib/util/removeUnnecessaryParens');
+import * as print from '../../lib/util/print.js';
+import { removeUnnecessaryParens } from '../../lib/util/removeUnnecessaryParens.js';
 
-const TestUtil = require('../TestUtil');
+import { TestUtil } from '../TestUtil.js';
 
 function testRemoveUnnecessaryParens(exprStr, outputStr) {
   const input = removeUnnecessaryParens(math.parse(exprStr));

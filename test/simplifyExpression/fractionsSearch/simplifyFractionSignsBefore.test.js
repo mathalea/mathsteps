@@ -1,6 +1,6 @@
-const simplifyFractionSignsBefore = require('../../../lib/simplifyExpression/fractionsSearch/simplifyFractionSignsBefore');
+import { simplifySignsBefore as simplifyFractionSignsBefore } from '../../../lib/simplifyExpression/fractionsSearch/simplifyFractionSignsBefore.js';
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js';
 
 function testSimplifyFractionSigns(exprStr, outputStr) {
   TestUtil.testSimplification(simplifyFractionSignsBefore, exprStr, outputStr);

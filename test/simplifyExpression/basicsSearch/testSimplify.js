@@ -1,8 +1,7 @@
-const assert = require('assert');
+import assert from 'assert';
+import * as print from '../../../lib/util/print.js';
+import { TestUtil } from '../../TestUtil.js';
 
-const print = require('../../../lib/util/print');
-
-const TestUtil = require('../../TestUtil');
 
 function testSimplify(exprStr, outputStr, simplifyOperation) {
   it(exprStr + ' -> ' + outputStr, function () {
@@ -14,4 +13,6 @@ function testSimplify(exprStr, outputStr, simplifyOperation) {
   });
 }
 
-module.exports = testSimplify;
+export {
+  testSimplify
+}

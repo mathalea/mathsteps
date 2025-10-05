@@ -1,10 +1,10 @@
-const checks = require('../../lib/checks');
-const Equation = require('../../lib/equation/Equation');
-const assert = require('assert');
- const solveEquation = require('../../lib/solveEquation');
+import * as checks from '../../lib/checks/index.js';
+import { Equation } from '../../lib/equation/Equation.js';
+import assert  from 'assert';
+import {solveEquationString as solveEquation} from '../../lib/solveEquation/index.js';
 
-const TestUtil = require('../TestUtil');
-const ChangeTypes = require('../../lib/ChangeTypes');
+import { TestUtil } from '../TestUtil.js'
+import { ChangeTypes } from '../../lib/ChangeTypes.js';
 
 function testCanCombine(exprStr, canCombine) {
   TestUtil.testBooleanFunction(checks.canSimplifyPolynomialTerms, exprStr, canCombine);

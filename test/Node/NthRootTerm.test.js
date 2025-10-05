@@ -1,6 +1,6 @@
-const NthRootTerm = require('../../lib/node/NthRootTerm');
+import { NthRootTerm } from '../../lib/node/NthRootTerm.js'
 
-const TestUtil = require('../TestUtil');
+import { TestUtil } from '../TestUtil.js'
 
 function testIsNthRootTerm(exprStr, isTerm) {
   TestUtil.testBooleanFunction(NthRootTerm.isNthRootTerm, exprStr, isTerm);

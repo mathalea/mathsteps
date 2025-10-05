@@ -1,5 +1,5 @@
-const MixedNumber = require('../../lib/node/MixedNumber');
-const TestUtil = require('../TestUtil');
+import * as MixedNumber from '../../lib/node/MixedNumber.js'
+import { TestUtil } from '../TestUtil.js'
 
 function testIsMixedNumber(input, output) {
   TestUtil.testBooleanFunction(MixedNumber.isMixedNumber, input, output);

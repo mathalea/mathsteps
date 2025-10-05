@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "Step by step math solutions",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "mathjs": "^14.8.0"
   },

@@ -1,6 +1,6 @@
-const arithmeticSearch = require('../../../lib/simplifyExpression/arithmeticSearch');
+import { arithmeticSearch } from '../../../lib/simplifyExpression/arithmeticSearch/index.js'
 
-const TestUtil = require('../../TestUtil');
+import { TestUtil } from '../../TestUtil.js'
 
 function testArithmeticSearch(exprStr, outputStr) {
   TestUtil.testSimplification(arithmeticSearch, exprStr, outputStr);

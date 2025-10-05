@@ -1,6 +1,6 @@
-const reduceZeroDividedByAnything = require('../../../lib/simplifyExpression/basicsSearch/reduceZeroDividedByAnything');
+import {reduceZeroDividedByAnything } from '../../../lib/simplifyExpression/basicsSearch/reduceZeroDividedByAnything.js';
 
-const testSimplify = require('./testSimplify');
+import { testSimplify } from './testSimplify.js';
 
 describe('simplify basics', function () {
   const tests = [

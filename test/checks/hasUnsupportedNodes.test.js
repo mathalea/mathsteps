@@ -1,7 +1,7 @@
-const assert = require('assert');
-const math = require('../../lib/node/MathjsInstance');
+import assert from 'assert';
+import math from '../../lib/node/MathjsInstance.js'; 
 
-const checks = require('../../lib/checks');
+import * as checks from '../../lib/checks/index.js';
 
 describe('arithmetic stepping', function () {
   it('4 + sqrt(16) no support for sqrt', function () {
